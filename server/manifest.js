@@ -6,7 +6,7 @@ const Toys = require('@hapipal/toys');
 const Schwifty = require('@hapipal/schwifty');
 
 // Pull .env into process.env
-Dotenv.config({ path: `${__dirname}/.env` });
+Dotenv.config({ path: `.env` });
 
 // Glue manifest as a confidence store
 module.exports = new Confidence.Store({
@@ -47,11 +47,11 @@ module.exports = new Confidence.Store({
                         knex: {
                             client: 'mysql',
                             connection: {
-                                host: process.env.DB_HOST || 'localhost',
-                                user: process.env.DB_USER || 'root',
-                                password: process.env.DB_PASSWORD || 'hapi',
-                                database: process.env.DB_DATABASE || 'user',
-                                port: process.env.DB_PORT || 3307
+                                host: process.env.DB_HOST,
+                                user: process.env.DB_USER,
+                                password: process.env.DB_PASSWORD,
+                                database: process.env.DB_DATABASE,
+                                port: process.env.DB_PORT
                             }
                         }
                     },
