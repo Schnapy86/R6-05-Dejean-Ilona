@@ -1,0 +1,8 @@
+{
+  "assert": "@hapi/code",
+  "coverage": true,
+  "threshold": 100,
+  "lint": true,
+  "lint-fix": true,
+  "verbose": true
+}
