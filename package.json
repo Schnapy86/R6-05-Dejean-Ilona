@@ -27,6 +27,7 @@
     "joi": "17.x.x",
     "nodemailer": "^6.10.0",
     "objection": "2.x.x",
+    "sinon": "^19.0.2",
     "sqlite3": "5.0.2"
   },
   "peerDependencies": {
