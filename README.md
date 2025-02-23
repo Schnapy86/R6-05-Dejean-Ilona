@@ -27,7 +27,16 @@ Pour démarrer le serveur :
 Pour démarrer le worker qui ici s'appelle worker.js: 
 `node worker.js`
 ## Gestion des migrations 
-Pour lancer les migrations : ``npx knex migrate:latest``
-Pour revenir en arrière d'une migration : ``npx knex migrate:rollback``
-Pour revenir en arrière de toutes les migrations : ``npx knex migrate:rollback --all``
-Pour avoir l'etat des migrations : ``npx knex migrate:status``
+Pour lancer les migrations : 
+`npx knex migrate:latest`
+Pour revenir en arrière d'une migration : 
+`npx knex migrate:rollback`
+Pour revenir en arrière de toutes les migrations : 
+`npx knex migrate:rollback --all`
+Pour avoir l'état des migrations : 
+`npx knex migrate:status`
+## Lancement des tests 
+Pour lancer tous les tests : 
+`npm test`
+Pour lancer un test spécifique : 
+`npx lab -g "le nom du test"`
